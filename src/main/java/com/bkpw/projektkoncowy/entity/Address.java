@@ -1,0 +1,46 @@
+package com.bkpw.projektkoncowy.entity;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+@Data
+@Entity
+@Table(name = "addresses")
+@NoArgsConstructor
+@AllArgsConstructor
+public class Address extends BaseEntity{
+
+
+    @Column(name = "street")
+    private String street;
+
+
+    @Column(name = "city")
+    private String city;
+
+
+    @Column(name = "state")
+    private String state;
+
+
+    @Column(name = "country")
+    private String country;
+
+
+    @Column(name = "postal_code")
+    private String postalCode;
+
+
+    @Column(name = "street_number")
+    private String streetNumber;
+
+
+
+}
